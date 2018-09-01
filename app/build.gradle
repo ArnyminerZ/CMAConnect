@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.2"
+    defaultConfig {
+        applicationId "com.communitymakeralcoi.cmaconnect"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionNameSuffix = version_suffix
+
+        buildConfigField "String", "glideVersion", "\"${glideVersion}\""
+        buildConfigField "String", "imagePickerVersion", "\"${imagePickerVersion}\""
+        buildConfigField "String", "firebaseVersion", "\"${firebaseVersion}\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            resValue "string", "mainBannerAdId", "ca-app-pub-1835953360087762/1915576850"
+        }
+        debug {
+            resValue "string", "mainBannerAdId", "ca-app-pub-3940256099942544/6300978111"
+        }
+    }
+    compileOptions {
+        sourceCompatibility '1.8'
+        targetCompatibility '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.61"
+    implementation 'androidx.appcompat:appcompat:1.0.0-rc02'
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    implementation "com.android.support:preference-v7:28.0.0"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    implementation 'com.google.android.material:material:1.0.0-rc01'
+
+    // Image Picker
+    implementation "com.github.esafirm.android-image-picker:imagepicker:${imagePickerVersion}"
+    implementation "com.github.esafirm.android-image-picker:rximagepicker:${imagePickerVersion}"
+    implementation "com.github.bumptech.glide:glide:${glideVersion}"
+
+    // Firebase dependencies
+    implementation "com.google.firebase:firebase-core:${firebaseVersion}"
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'
+    implementation 'com.google.firebase:firebase-config:16.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.3'
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
+    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+}

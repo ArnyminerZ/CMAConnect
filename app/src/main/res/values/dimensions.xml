@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="style_1_rounded_dialog">25dp</dimen>
+    <dimen name="style_1_settings_icon_padding">15dp</dimen>
+    <dimen name="style_1_settings_icon_color_margin">20dp</dimen>
+    <dimen name="style_1_accent_button_rounded">20dp</dimen>
+    <dimen name="style_1_rounded_light_bg_rounded">20dp</dimen>
+</resources>

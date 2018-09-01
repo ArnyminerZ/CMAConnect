@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "275864197618",
+    "firebase_url": "https://cma-connect-b7cb6.firebaseio.com",
+    "project_id": "cma-connect-b7cb6",
+    "storage_bucket": "cma-connect-b7cb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275864197618:android:a455b3509a811934",
+        "android_client_info": {
+          "package_name": "com.communitymakeralcoi.cmaconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275864197618-tc0nth7cdi1qks9bfrid1uerq1n9n2ud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.communitymakeralcoi.cmaconnect",
+            "certificate_hash": "f37ebaa86886d8fd3fa0d2a219663e472f336fe8"
+          }
+        },
+        {
+          "client_id": "275864197618-iuo4jtrp3a6aea0dibiiidiuhfnq27t4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASmjryVdcU_WFgZ_4w4MfnRYT_Iocx3HY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275864197618-iuo4jtrp3a6aea0dibiiidiuhfnq27t4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

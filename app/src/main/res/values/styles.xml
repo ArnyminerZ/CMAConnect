@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LoadActivity" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Style1" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/style_1_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/style_1_colorPrimaryDark</item>
+        <item name="colorAccent">@color/style_1_colorAccent</item>
+
+        <!-- TODO: Dialog Theme -->
+        <!-- <item name="android:dialogTheme">@style/Style1.Dialog</item> -->
+        <item name="android:progressBarStyle">@style/Style1.ProgressBar</item>
+    </style>
+    <style name="Style1.NoTitle" parent="Style1">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="Style1.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@drawable/style_1_rounded_corner_dialog</item>
+        <item name="android:buttonBarButtonStyle">@style/Style1.Dialog.ButtonStyle</item>
+    </style>
+    <style name="Style1.Dialog.ButtonStyle" parent="@style/Widget.AppCompat.ButtonBar">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/style_1_dialog_button_color</item>
+    </style>
+    <style name="Style1.ProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/style_1_progress_bar</item>
+    </style>
+    <style name="Style1.Button" parent="android:Widget.Button">
+        <item name="android:background">@drawable/style_1_accent_button_bg</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/style_1_settings_icon_color_margin"
+    android:paddingTop="@dimen/style_1_settings_icon_color_margin"
+    android:paddingStart="@dimen/style_1_settings_icon_color_margin"
+    android:paddingEnd="@dimen/style_1_settings_icon_color_margin">
+    <item>
+        <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/style_1_settings_notifications" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/round_notifications_white_24"
+        android:bottom="@dimen/style_1_settings_icon_padding"
+        android:left="@dimen/style_1_settings_icon_padding"
+        android:right="@dimen/style_1_settings_icon_padding"
+        android:top="@dimen/style_1_settings_icon_padding" />
+</layer-list>

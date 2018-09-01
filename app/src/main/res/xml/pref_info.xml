@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="pref_version"
+        android:title="@string/pref_version"/>
+    <Preference
+        android:key="pref_build"
+        android:title="@string/pref_build"/>
+    <Preference
+        android:key="pref_ui_version"
+        android:title="@string/pref_ui_version"/>
+
+    <Preference
+        android:key="pref_firebase"
+        android:title="@string/pref_firebase"/>
+    <Preference
+        android:key="pref_glide"
+        android:title="@string/pref_glide"/>
+    <Preference
+        android:key="pref_folder_picker"
+        android:title="@string/pref_folder_picker"/>
+</PreferenceScreen>
